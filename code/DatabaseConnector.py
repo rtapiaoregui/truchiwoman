@@ -73,7 +73,6 @@ def _read_file (path):
                 obj = fh.read()
     return obj
 
-
 def _write_file (obj, path):
     """
     Guarda un archivo csv o pickle
