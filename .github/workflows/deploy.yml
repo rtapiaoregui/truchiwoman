@@ -14,12 +14,12 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up SSH
-      run: |
+      run: | 
         chmod 600 key.pem
 
     - name: Deploy Code to GCP
       run: |
-         ssh -o StrictHostKeyChecking=no -i key.pem japdavev5@34.134.16.54 << 'EOF'
+        ssh -o StrictHostKeyChecking=no -i key.pem japdavev5@34.134.16.54 << 'EOF'
         cd /home/truchiwoman-dev
         git pull prod main_v2
         sudo systemctl restart flaskapp
