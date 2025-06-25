@@ -16,3 +16,4 @@ with open("sitemap.xml", "w") as f:
         f.write(f"  <url>\n    <loc>{url}</loc>\n  </url>\n")
 
     f.write('</urlset>')
+
